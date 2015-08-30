@@ -1,12 +1,17 @@
 package com.trev.fizzbuzz.inject.spring.javaconf;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class FizzBuzzService
 {
 
+    @Autowired
     private FizzBuzzNumberProvider numberProvider;
 
+    @Autowired
     private FizzBuzzTextProvider textProvider;
 
+    @Autowired
     private FizzBuzzPrinter printer;
 
     public void doFizzBuzz()
